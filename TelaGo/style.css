@@ -1,0 +1,82 @@
+:root { /*Variaveis de cores para serem usadas depois*/
+    --color-white: rgb(255, 255, 255);
+    --color-marrom1: rgb(116, 53, 9);
+    --color-marrom2: rgb(133, 78, 40);
+
+    --color-blue: rgb(20, 45, 65);
+}
+
+*{/*Organizando as margens o "*" faz valer para todo o site*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 16px Arial;
+    background-color: var(--color-marrom2);
+    color: var(--color-blue);
+
+}
+.img_logo {
+    width: 90px; /*tamanho do icone*/
+}
+
+.header,
+.navitelago_header {
+    display: flex;  /*cooca os itens na header*/
+    flex-direction: row;
+    align-items: center; /*centraliza os itens na header*/
+}
+
+.header {
+    background-color: var(--color-marrom1);
+    box-shadow: 1px 1px 4px var(--color-blue); /*Deixa a divisão do header com uma sombra*/
+    height: 56px; /*tamanho do header*/
+    justify-content: space-between; /*coloca o icone e os elementos em lados opostos*/
+    padding: 0 4%; /*da espaçamento dos elementos*/
+    
+}
+
+.navitelago_header {
+    gap: 3em; /*espaçamento entre os links*/
+    z-index: 2;  /*Determina a camada da area*/
+}
+
+.navitelago_header a{
+    text-decoration: none; /*tira os sumbliado dos links*/
+    color: var(--color-blue);
+    transition: 1s;
+    font-weight: bold; /*textos em negritos*/
+}
+
+.btn_icon_header {
+    background-color: transparent;
+    border: none;
+    color: var(--color-white);
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .btn_icon_header {
+        display: block;
+    }
+    .navitelago_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--color-marrom1);
+        height: 100%;
+        width: 35vw;
+        padding: 16px;
+        animation-duration: 1s;
+        margin-left: -100vw ;
+    }
+}
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+    to  {
+        margin-left: -10vw;
+    }
+}
