@@ -7,8 +7,10 @@
     <link rel= "icon"  href= "imagens/favicon (3).ico"  type= "image/x-icon" >
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="header" id="header">
+  
+    <header>
       <button onclick="togglesidebar()" class="btn_icon_header">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,14 +50,15 @@
         <a href="#" class="active">Apresentações</a>
         <a href="#" class="active">Videos</a>
       </div>
-    </div>
-    <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+    </header>
+
+    <main tabindex="0" onclick="closeSidebar()" class="content" id="content">
       <!-- "tabindex="0" deixar o area clicavel-->
       <h1>
         Sei
         laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
       </h1>
-    </div>
+    </main>
   </body>
   <script src="telago.js"></script>
 </html>

@@ -24,14 +24,14 @@ body {
   width: 90px; /*tamanho do icone*/
 }
 
-.header,
+header,
 .navitelago_header {
   display: flex; /*cooca os itens na header*/
   flex-direction: row;
   align-items: center; /*centraliza os itens na header*/
 }
 
-.header {
+header {
   background-color: var(--color-marrom2);
   box-shadow: 1px 1px 4px var(--color-blue); /*Deixa a divisão do header com uma sombra*/
   height: 56px; /*tamanho do header*/
@@ -86,4 +86,24 @@ body {
   to {
     margin-left: -10vw;
   }
+}
+
+h1, .inscricao {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.inscricao {
+  background-color: var(--color-marrom2);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin: 9em;
+  width: 40em;
+  height: 40em;
+  border-radius: 19px;
 }
