@@ -2,11 +2,11 @@
   /*Variaveis de cores para serem usadas depois*/
   --color-white: rgb(255, 255, 255);
   --color-creme: rgb(255, 229, 195);
-  --color-marrom1: rgb(151, 97, 57);
+  --color-marrom: rgb(201, 145, 102);
+  --color-marrom1: rgb(167, 101, 50);
   --color-marrom2: rgb(133, 78, 40);
-  --color-black: rgb(0, 0, 0);
-
   --color-blue: rgb(20, 45, 65);
+  --color-black: rgb(0, 0, 0);
 }
 
 * {
@@ -19,6 +19,9 @@ body {
   font: normal 16px Arial;
   background-color: var(--color-creme);
   color: var(--color-blue);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .img_logo {
   width: 90px; /*tamanho do icone*/
@@ -98,12 +101,45 @@ h1, .inscricao {
 }
 
 .inscricao {
-  background-color: var(--color-marrom2);
+  background-color: var(--color-marrom);
   display: flex;
   justify-content: center;
-  margin: auto;
-  margin: 9em;
   width: 40em;
   height: 40em;
   border-radius: 19px;
+  box-shadow: 1px 1px 4px var(--color-black);
+}
+
+.ajuda {
+  background-color: var(--color-marrom);
+  width: 85em;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px var(--color-black)
+}
+
+p {
+  font-size: 1.0rem;
+}
+
+footer {
+  color: var(--color-blue);
+  background-color: var(--color-marrom1);
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.links a{
+    text-decoration: none;
+    font-weight: bold; 
+    color: var(--color-blue);
+
+}
+
+main {
+  flex: 1;
 }
