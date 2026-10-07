@@ -15,6 +15,10 @@
   padding: 0;
 }
 
+main {
+  flex: 1;
+}
+
 body {
   font: normal 16px Arial;
   background-color: var(--color-creme);
@@ -98,6 +102,8 @@ h1, .inscricao {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .inscricao {
@@ -112,7 +118,7 @@ h1, .inscricao {
 
 .ajuda {
   background-color: var(--color-marrom);
-  width: 85em;
+  width: 80%;
   height: 20em;
   display: flex;
   justify-content: center;
@@ -137,9 +143,23 @@ footer {
     text-decoration: none;
     font-weight: bold; 
     color: var(--color-blue);
-
+    
 }
 
-main {
-  flex: 1;
+.avisos {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }

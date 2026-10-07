@@ -1,6 +1,11 @@
 var header = document.getElementById("header");
 var navitelago_header = document.getElementById("navitelago_header");
 var content = document.getElementById("content");
+const carrossel = document.getElementById("carrossel")
+const imagens = carrossel.querySelectorAll("img")
+const prev = document.getElementById("prev")
+const next = document.getElementById('next');
+let index = 0;
 var showSidebar = false;
 
 function togglesidebar() {
@@ -28,3 +33,24 @@ window.addEventListener("resize", function (event) {
     togglesidebar();
   }
 });
+
+
+function atualizarCarrossel() {
+  carrossel.style.transform = `translateX(${-index * 100}%)`;
+}
+
+next.addEventListener('click', () => {
+
+  function atualizar() {
+    index = (index + 1) % imagens.length;
+    atualizarCarrossel();    
+  }  
+
+});
+
+prev.addEventListener('click', () => {
+  index = (index - 1 + imagens.length) % imagens.length;
+  atualizarCarrossel();
+});
+
+setInterval(atualizar, 5000);
