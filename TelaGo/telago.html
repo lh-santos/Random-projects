@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TelaGo</title>
-    <link rel= "icon"  href= "imagens/favicon (3).ico"  type= "image/x-icon" >
+    <link rel="icon" href="imagens/favicon (3).ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-  
     <header>
       <button onclick="togglesidebar()" class="btn_icon_header">
         <svg
@@ -27,7 +26,9 @@
         </svg>
       </button>
       <div class="logo_header">
-        <a href="#"><img src="imagens/logo.png" class="img_logo" alt="Logo" /></a>
+        <a href="#"
+          ><img src="imagens/logo.png" class="img_logo" alt="Logo"
+        /></a>
       </div>
       <div class="navitelago_header" id="navitelago_header">
         <button onclick="togglesidebar()" class="btn_icon_header">
@@ -51,54 +52,77 @@
       </div>
     </header>
 
-    <main tabindex="0" onclick="closeSidebar()" class="content" id="content" >
+    <main tabindex="0" onclick="closeSidebar()" class="content" id="content">
       <!-- "tabindex="0" deixar o area clicavel-->
-      <h1>
-        Paroquia São Francisco de Assis
-      </h1>
-      <section  class="container">
-        <article class="avisos">  
+      <h1>Paroquia São Francisco de Assis</h1>
+      <section class="container">
+        <article class="avisos">
           <div class="carrossel" id="carrossel">
-            <img src="carrossel/WhatsApp Image 2026-10-07 at 10.24.12.jpeg" alt="">
-            <img src="carrossel/WhatsApp Image 2026-10-07 at 10.23.43.jpeg" alt="">
-            <img src="carrossel/WhatsApp Image 2026-10-07 at 10.24.08.jpeg" alt="">
-            <img src="carrossel/WhatsApp Image 2026-10-07 at 10.24.07.jpeg" alt="">
+            <img src="carrossel/WhatsApp Image 2026-10-07 at 10.24.12.jpeg"alt=""/>
+            <img src="carrossel/WhatsApp Image 2026-10-07 at 10.23.43.jpeg" alt="" />
+            <img
+              src="carrossel/WhatsApp Image 2026-10-07 at 10.24.08.jpeg" alt=""/>
+            <img
+              src="carrossel/WhatsApp Image 2026-10-07 at 10.24.07.jpeg"
+              alt="" />
           </div>
 
-          <button id="prev">voltar</button>
-          <button id="next">proximo</button>
-        </article>
-        <article class="ajuda">
+          <div class="btnCarrossel"> 
 
+            <button id="prev" class="btnCarrosselE">
+              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223"/>
+              </svg>
+            </button>
+          <button id="next" class="btnCarrosselD">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671"/>
+            </svg>
+          </button>          
+            
+          </div>
         </article>
+        <article class="ajuda"></article>
       </section>
- 
     </main>
     <footer>
       <p>Pregue o Evangelho em todo tempo, se necessário, use palavras!</p>
       <div class="links">
         <address>
-          <a href="https://api.whatsapp.com/send/?phone=5575983416050&text=Ol%C3%A1%2C+&type=phone_number&app_absent=0">whatsapp</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5575983416050&text=Ol%C3%A1%2C+&type=phone_number&app_absent=0"
+            >whatsapp</a
+          >
         </address>
 
         <address>
-          <a href="https://chat.whatsapp.com/DnSeFy7QGmOBOHCpE6nJwd">Comunidade</a>
-        </address> 
+          <a href="https://chat.whatsapp.com/DnSeFy7QGmOBOHCpE6nJwd"
+            >Comunidade</a
+          >
+        </address>
 
         <address>
-          <a href="https://www.youtube.com/@paroquiasaofranciscodeassis01">YouTube</a>
-        </address> 
+          <a href="https://www.youtube.com/@paroquiasaofranciscodeassis01"
+            >YouTube</a
+          >
+        </address>
 
         <address>
           <a href="https://maps.app.goo.gl/adtK59gcwTZFP7L99">Localização</a>
-        </address>  
+        </address>
 
         <address>
-          <a href="https://www.instagram.com/paroquiasaofranciscodeassis01?stkn=dTJmMmU3eG0xZmU3">Instagram</a>
-        </address>  
+          <a
+            href="https://www.instagram.com/paroquiasaofranciscodeassis01?stkn=dTJmMmU3eG0xZmU3"
+            >Instagram</a
+          >
+        </address>
       </div>
 
-      <p>&copy; 2026 Paroquia São Francisco de Assis. Todos os direitos reservados.</p>
+      <p>
+        &copy; 2026 Paroquia São Francisco de Assis. Todos os direitos
+        reservados.
+      </p>
     </footer>
   </body>
   <script src="telago.js"></script>

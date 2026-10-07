@@ -40,12 +40,8 @@ function atualizarCarrossel() {
 }
 
 next.addEventListener('click', () => {
-
-  function atualizar() {
-    index = (index + 1) % imagens.length;
-    atualizarCarrossel();    
-  }  
-
+  index = (index + 1) % imagens.length;
+  atualizarCarrossel();
 });
 
 prev.addEventListener('click', () => {
@@ -53,4 +49,9 @@ prev.addEventListener('click', () => {
   atualizarCarrossel();
 });
 
-setInterval(atualizar, 5000);
+function atualizar() {
+  index = (index + 1) % imagens.length;
+  atualizarCarrossel();  
+}
+
+setInterval(atualizar, 5000)
